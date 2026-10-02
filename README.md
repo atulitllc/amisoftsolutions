@@ -20,8 +20,15 @@ Preferred domain: **amisoftsolutions.net**
 
 ## GitHub Pages
 
-Published from the `main` branch at the repository root.
-
 https://atulitllc.github.io/amisoftsolutions/
 
-`.nojekyll` is present so Pages serves these files directly and does not run Jekyll.
+The site is meant to publish from the `main` branch at the repository root. `.nojekyll` is present so Pages serves these files directly and does not run Jekyll.
+
+Pages is not turned on yet. The repository token cannot change Pages settings, so enable it in GitHub:
+
+1. Open [Settings → Pages](https://github.com/atulitllc/amisoftsolutions/settings/pages).
+2. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
+3. Choose branch **main** and folder **/ (root)**.
+4. Save.
+
+The first build publishes the URL above. When DNS for **amisoftsolutions.net** is ready, add that custom domain on the same Pages screen.
