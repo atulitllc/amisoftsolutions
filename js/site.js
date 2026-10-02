@@ -178,7 +178,7 @@
     ].join("\n");
 
     var href =
-      "mailto:partnerships@amisoftsolution.net" +
+      "mailto:partnerships@amisoftsolutions.net" +
       "?subject=" +
       encodeURIComponent("AmiSoft inquiry — " + firm) +
       "&body=" +
@@ -188,7 +188,7 @@
       status.hidden = false;
       status.classList.remove("is-error");
       status.textContent =
-        "Your email application should open with this note addressed to partnerships@amisoftsolution.net. If it does not, send the same details directly.";
+        "Your email application should open with this note addressed to partnerships@amisoftsolutions.net. If it does not, send the same details directly.";
     }
 
     window.location.href = href;
