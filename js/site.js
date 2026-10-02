@@ -1,4 +1,19 @@
 (function () {
+  var header = document.querySelector(".site-header");
+  var banner = document.querySelector(".hero-banner, .page-hero");
+
+  function syncHeader() {
+    if (!header) return;
+    var threshold = banner ? Math.max(24, (banner.offsetHeight || 0) * 0.12) : 24;
+    header.classList.toggle("is-solid", window.scrollY > threshold);
+  }
+
+  syncHeader();
+  window.addEventListener("scroll", syncHeader, { passive: true });
+  window.addEventListener("resize", syncHeader);
+})();
+
+(function () {
   var toggle = document.querySelector(".nav-toggle");
   var nav = document.getElementById("site-nav");
 

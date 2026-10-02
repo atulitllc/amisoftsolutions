@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0c1822" />
+  <meta name="theme-color" content="#0a1014" />
   <title>For partners — AmiSoft Solutions</title>
   <meta name="description" content="Enablement, co-sell, and implementation kits for consulting and systems-integration firms. You lead the account. AmiSoft stays behind the architecture." />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -14,7 +14,7 @@
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
-  <header class="site-header">
+  <header class="site-header site-header--on-banner">
     <div class="container header-inner">
       <a class="brand" href="index.html">
         <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
@@ -36,15 +36,42 @@
         <a href="solutions.html">Solutions</a>
         <a href="partners.html" aria-current="page">For partners</a>
         <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a class="btn btn-primary btn-sm" href="contact.html">Talk with us</a>
+        <a class="btn btn-cta btn-sm" href="contact.html">Contact us</a>
       </nav>
     </div>
   </header>
 
   <main id="content">
-    <section class="page-hero">
-      <div class="container">
+        <section class="page-hero">
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="hero-glow hero-glow--teal"></div>
+        <div class="hero-glow hero-glow--amber"></div>
+        <div class="hero-bokeh"></div>
+        <svg class="hero-wire hero-wire--page" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <radialGradient id="parWireCore" cx="50%" cy="48%" r="42%">
+              <stop offset="0%" stop-color="#f0c070" stop-opacity="0.4"/>
+              <stop offset="40%" stop-color="#149188" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#0a1014" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="parWireStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#7ec8c0" stop-opacity="0.5"/>
+              <stop offset="100%" stop-color="#1f6feb" stop-opacity="0.35"/>
+            </linearGradient>
+          </defs>
+          <circle cx="320" cy="320" r="200" fill="url(#parWireCore)"/>
+          <ellipse cx="320" cy="320" rx="200" ry="200" fill="none" stroke="url(#parWireStroke)" stroke-width="1.1" opacity="0.65"/>
+          <ellipse cx="320" cy="320" rx="200" ry="68" fill="none" stroke="#9ad4cc" stroke-width="0.7" opacity="0.3"/>
+          <ellipse cx="320" cy="320" rx="68" ry="200" fill="none" stroke="#8bb8e8" stroke-width="0.7" opacity="0.28"/>
+          <g fill="#e8f4f2" opacity="0.65">
+            <circle cx="320" cy="120" r="2"/><circle cx="440" cy="170" r="1.8"/><circle cx="490" cy="300" r="2"/>
+            <circle cx="450" cy="430" r="1.6"/><circle cx="280" cy="480" r="1.8"/><circle cx="160" cy="360" r="1.7"/>
+            <circle cx="170" cy="220" r="1.6"/><circle cx="360" cy="260" r="1.4"/>
+          </g>
+        </svg>
+        <div class="hero-grain"></div>
+      </div>
+      <div class="container page-hero-inner">
         <p class="crumb"><a href="index.html">Home</a> / For partners</p>
         <p class="eyebrow">Channel partnership</p>
         <h1>Stay in front of the client. Put AmiSoft behind the architecture.</h1>
@@ -53,6 +80,9 @@
           <p>You lead the account.</p>
         </blockquote>
       </div>
+      <svg class="wave-sep" viewBox="0 0 1440 96" preserveAspectRatio="none" aria-hidden="true">
+        <path fill="#ffffff" d="M0,64 C240,96 480,16 720,40 C960,64 1200,96 1440,48 L1440,96 L0,96 Z"/>
+      </svg>
     </section>
 
     <section class="partner-block" id="enablement">
@@ -193,7 +223,7 @@
           <h2 id="cta-heading">Introduce the pursuit while the scope is still movable.</h2>
           <p>A short description of the computing and systems integration frame. Bring the context you can share.</p>
         </div>
-        <a class="btn btn-primary" href="contact.html">Start a partner conversation</a>
+        <a class="btn btn-cta" href="contact.html">Start a partner conversation</a>
       </div>
     </section>
   </main>
