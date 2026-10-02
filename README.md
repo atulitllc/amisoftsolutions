@@ -1,6 +1,6 @@
 # AmiSoft Solutions
 
-Partner marketing site for AmiSoft Solutions. The site speaks to consulting and systems-integration firms that sell GxP-ready computing environments and clinical and R&D data platforms.
+Marketing site for AmiSoft Solutions. The site presents GxP-ready scientific computing environments, clinical and R&D data platforms, analytics workspaces, and integration for pharmaceutical, biotechnology, and medical device organizations. Partnership details live on the Partners page.
 
 ## Pages
 
@@ -8,7 +8,7 @@ Partner marketing site for AmiSoft Solutions. The site speaks to consulting and 
 | --- | --- |
 | Home | `index.html` |
 | Solutions | `solutions.html` |
-| For partners | `partners.html` |
+| Partners | `partners.html` |
 | About | `about.html` |
 | Contact | `contact.html` |
 

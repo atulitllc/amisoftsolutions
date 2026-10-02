@@ -130,7 +130,7 @@
       errors.push("name");
     }
     if (!firm) {
-      showError("firm", "Enter your firm.");
+      showError("firm", "Enter your organization.");
       errors.push("firm");
     }
     if (!email) {
@@ -145,11 +145,11 @@
       errors.push("setting");
     }
     if (!motion) {
-      showError("motion", "Choose how you expect to work.");
+      showError("motion", "Choose what you need.");
       errors.push("motion");
     }
     if (!notes) {
-      showError("notes", "Add a short note about the pursuit.");
+      showError("notes", "Add a short note about the computing and systems frame.");
       errors.push("notes");
     }
 
@@ -166,13 +166,13 @@
 
     var body = [
       "Name: " + name,
-      "Firm: " + firm,
+      "Organization: " + firm,
       "Email: " + email,
       "Role: " + (role || "—"),
       "Regulated setting: " + setting,
-      "Expected motion: " + motion,
+      "What you need: " + motion,
       "What should not be replaced: " + (owns || "—"),
-      "Proposal or workshop timing: " + (due || "—"),
+      "Timing: " + (due || "—"),
       "",
       notes
     ].join("\n");
@@ -180,7 +180,7 @@
     var href =
       "mailto:partnerships@amisoftsolution.net" +
       "?subject=" +
-      encodeURIComponent("Partner conversation — " + firm) +
+      encodeURIComponent("AmiSoft inquiry — " + firm) +
       "&body=" +
       encodeURIComponent(body);
 
