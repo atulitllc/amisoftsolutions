@@ -16,7 +16,7 @@ Static HTML, CSS, and JavaScript. Open `index.html` in a browser, or serve the r
 
 ## Domain
 
-Preferred domain: **amisoftsolution.net**
+Preferred domain: **amisoftsolutions.net**
 
 ## GitHub Pages
 
@@ -24,4 +24,4 @@ https://atulitllc.github.io/amisoftsolutions/
 
 Published from the `main` branch at the repository root (`/`). `.nojekyll` is present so Pages serves these files directly and does not run Jekyll.
 
-That source is set under [Settings → Pages](https://github.com/atulitllc/amisoftsolutions/settings/pages): **Deploy from a branch**, branch **main**, folder **/ (root)**. When DNS for **amisoftsolution.net** is ready, add that custom domain on the same screen.
+That source is set under [Settings → Pages](https://github.com/atulitllc/amisoftsolutions/settings/pages): **Deploy from a branch**, branch **main**, folder **/ (root)**. When DNS for **amisoftsolutions.net** is ready, add that custom domain on the same screen.
