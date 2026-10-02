@@ -6,21 +6,24 @@
     toggle.addEventListener("click", function () {
       var open = nav.classList.toggle("is-open");
       toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      document.body.classList.toggle("nav-open", open);
     });
 
     document.addEventListener("keydown", function (event) {
       if (event.key === "Escape" && nav.classList.contains("is-open")) {
         nav.classList.remove("is-open");
         toggle.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
         toggle.focus();
       }
     });
 
     nav.querySelectorAll("a").forEach(function (link) {
       link.addEventListener("click", function () {
-        if (window.matchMedia("(max-width: 960px)").matches) {
+        if (window.matchMedia("(max-width: 1040px)").matches) {
           nav.classList.remove("is-open");
           toggle.setAttribute("aria-expanded", "false");
+          document.body.classList.remove("nav-open");
         }
       });
     });
@@ -160,7 +163,7 @@
     ].join("\n");
 
     var href =
-      "mailto:partnerships@amisoftsolutions.com" +
+      "mailto:partnerships@amisoftsolution.net" +
       "?subject=" +
       encodeURIComponent("Partner conversation — " + firm) +
       "&body=" +
@@ -170,7 +173,7 @@
       status.hidden = false;
       status.classList.remove("is-error");
       status.textContent =
-        "Your email application should open with this note addressed to partnerships@amisoftsolutions.com. If it does not, send the same details directly.";
+        "Your email application should open with this note addressed to partnerships@amisoftsolution.net. If it does not, send the same details directly.";
     }
 
     window.location.href = href;
