@@ -160,9 +160,9 @@ a { color: var(--teal); }
 
 .brand-sub {
   font-family: var(--sans);
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.13em;
   text-transform: lowercase;
   color: #c5ddd9;
 }
@@ -197,6 +197,7 @@ a { color: var(--teal); }
 
 .nav-toggle {
   display: none;
+  position: relative;
   align-items: center;
   justify-content: center;
   width: 44px;
@@ -206,6 +207,22 @@ a { color: var(--teal); }
   color: #fff;
   cursor: pointer;
 }
+
+.nav-toggle[aria-expanded="true"] svg { visibility: hidden; }
+
+.nav-toggle[aria-expanded="true"]::before,
+.nav-toggle[aria-expanded="true"]::after {
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: 13px;
+  width: 18px;
+  height: 2px;
+  background: #fff;
+}
+
+.nav-toggle[aria-expanded="true"]::before { transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"]::after { transform: rotate(-45deg); }
 
 .nav-toggle svg { width: 20px; height: 20px; }
 
